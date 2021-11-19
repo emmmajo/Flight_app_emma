@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="20dp">
+
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/profile_image"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:background="@android:color/holo_blue_dark"
+            android:padding="20dp"
+            android:src="@drawable/profile_picture"
+
+            />
+
+
+        <TextView
+            android:id="@+id/fullname_field"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/profile_image"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="3dp"
+            android:text="Sam Jo"
+            android:textColor="#000"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/username_field"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/fullname_field"
+            android:text="sam_jo"
+            android:textSize="14sp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="3dp"
+            android:textColor="#000"
+            />
+
+        <TextView
+            android:id="@+id/email"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/username_field"
+            android:layout_marginTop="44dp"
+            android:text="Email: sam.jo@abc.com"
+            android:textColor="#000"
+            android:textSize="18sp"
+            android:layout_centerHorizontal="true"/>
+        <TextView
+            android:id="@+id/phone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/email"
+            android:layout_marginTop="44dp"
+            android:text="Phone #: (209) 768-8775"
+            android:textColor="#000"
+            android:textSize="18sp"
+            android:layout_centerHorizontal="true"/>
+        <TextView
+            android:id="@+id/preferred_airport"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/phone"
+            android:layout_marginTop="44dp"
+            android:text="Favorite departure airport: SFO"
+            android:textColor="#000"
+            android:textSize="18sp"
+            android:layout_centerHorizontal="true"/>
+        <TextView
+            android:id="@+id/preferred_airlines"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/preferred_airport"
+            android:layout_marginTop="44dp"
+            android:text="Preferred airline: Delta"
+            android:textColor="#000"
+            android:textSize="18sp"
+            android:layout_centerHorizontal="true"/>
+    </RelativeLayout>
+</LinearLayout>

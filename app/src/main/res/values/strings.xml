@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Flight_Simulation</string>
+    <string name="welcome">Welcome</string>
+    <string name="you_did_it">You did it!!!!</string>
+    <string name="test_01">TextView</string>
+    <string name="hello">Hello</string>
+    <string name="Enter_app">Enter</string>
+    <string name="Profile">Person</string>
+    <string name="Flight_Search">Search</string>
+    <string name="departure">Departure Date</string>
+    <string name="select_departure_date">Select Departure Date</string>
+    <string name="departure_date">Departure Date</string>
+    <string name="return_date">Return Date</string>
+
+</resources>

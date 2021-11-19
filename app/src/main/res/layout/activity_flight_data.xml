@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FlightDataActivity">
+
+    <ImageButton
+        android:id="@+id/imageButton"
+        android:layout_width="116dp"
+        android:layout_height="113dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:contentDescription="@string/Profile"
+        android:onClick="profile"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="161dp"
+        android:layout_height="75dp"
+        android:layout_marginStart="121dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="122dp"
+        android:text="Flight Inputs"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageButton" />
+
+    <Button
+        android:id="@+id/FlightSearch"
+        android:layout_width="135dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="136dp"
+        android:layout_marginBottom="220dp"
+        android:onClick="flightResults"
+        android:text="@string/Flight_Search"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/departure_date"
+        style="?android:spinnerStyle"
+        android:layout_width="193dp"
+        android:layout_height="41dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="18dp"
+        android:onClick="openDepartureDate"
+        android:text="@string/departure_date"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textColor="#0B0A0A"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+    <Button
+        android:id="@+id/return_date"
+        style="?android:spinnerStyle"
+        android:layout_width="146dp"
+        android:layout_height="46dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="16dp"
+        android:onClick="openReturnDate"
+        android:text="@string/return_date"
+        android:textColor="#0B0A0A"
+        app:layout_constraintStart_toEndOf="@+id/departure_date"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Android Projects/Flight_Similation/app/src/main/res/layout/activity_flight_results.xml" value="0.3307291666666667" />
+        <entry key="..\:/Android Projects/Flight_Similation/app/src/main/res/layout/activity_profile.xml" value="0.3307291666666667" />
+        <entry key="..\:/Android Projects/test/Flight_Similation-254c2d08af87895e2ff1dd0944d1d9892d0b621e/Flight_Similation-254c2d08af87895e2ff1dd0944d1d9892d0b621e/app/src/main/res/layout/activity_flight_data.xml" value="0.2484375" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" project-jdk-name="1.8" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>
