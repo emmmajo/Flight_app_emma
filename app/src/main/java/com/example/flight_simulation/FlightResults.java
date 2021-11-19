@@ -17,22 +17,22 @@ import java.util.List;
 
 public class FlightResults extends AppCompatActivity {
 
-    private Button recipeSearchButton;
+    private Button searchButton;
     private EditText searchEditText;
-    private TextView recipeTitle;
-    private TextView recipeLikes;
+    private TextView flightNum;
+    private TextView departingAirport;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_flight_results);
 
-        recipeSearchButton = findViewById(R.id.recipe_search_button);
+        searchButton = findViewById(R.id.search_button);
         searchEditText = findViewById(R.id.search_edit_text);
-        recipeTitle = findViewById(R.id.recipe_title);
-        recipeLikes = findViewById(R.id.recipe_likes);
+        flightNum = findViewById(R.id.flight_num);
+        departingAirport = findViewById(R.id.departing_airport);
 
-        recipeSearchButton.setOnClickListener(new View.OnClickListener(){
+        searchButton.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View v){
                 SearchAsyncTask task = new SearchAsyncTask();
@@ -48,8 +48,8 @@ public class FlightResults extends AppCompatActivity {
                         //TextView variable names below are examples as these variables have not yet been
                         //created when you start the lab. They should correspond to the id attribute
                         //assigned in the activity_main.xml
-                        recipeTitle.setText("Flight Number: "+ first.getFlightNum());
-                        recipeLikes.setText("From: " + first.getDeparture());
+                        flightNum.setText("Flight Number: "+ first.getFlightNum());
+                        departingAirport.setText("From: " + first.getDeparture());
                     }
                 });
                 String searchTerm = searchEditText.getText().toString();
