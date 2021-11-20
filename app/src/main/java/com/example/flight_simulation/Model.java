@@ -9,13 +9,13 @@ public class Model {
         return flightNum;
     }
 
-    public void setFlightNum(String value) {
-        this.flightNum = value;
+    public void setFlightNum(String num) {
+        this.flightNum = num;
     }
 
     public String getDeparture() { return departure; }
 
-    public void setDeparture(String likes) { this.departure = likes; }
+    public void setDeparture(String airport) { this.departure = airport; }
 
 }
 

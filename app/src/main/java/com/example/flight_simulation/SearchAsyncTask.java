@@ -32,6 +32,7 @@ public class SearchAsyncTask extends AsyncTask<String, Void, List<Model>> {
 
         //String depLocation = "SMF", depDate = "2021-12-27", destination = "NYC", tripType = "ROUND_TRIP";
         //int passengers = 1;
+
         String depLocation = params[0], depDate = "2021-12-27", destination = "NYC", tripType = "ROUND_TRIP";
         int passengers = 1;
 
