@@ -13,7 +13,7 @@ public class FlightSearchApi {
     String depLocation = "SMF", depDate = "2021-12-27", destination = "NYC", tripType = "ROUND_TRIP";
     int passengers = 1;
 
-    private static final String baseApiUrl = "priceline-com-provider.p.rapidapi.com";
+    private static final String baseApiUrl = "https://priceline-com-provider.p.rapidapi.com";
     private static final String apiKey = "b8ed4a331emsh2558b300bd3706cp19a0eajsnf48565dc015e";
 
 
@@ -26,10 +26,8 @@ public class FlightSearchApi {
         String p = Integer.toString(passengers);
         HttpUrl.Builder urlBuilder = HttpUrl.parse(baseApiUrl).newBuilder();
         urlBuilder.addPathSegment("flights");
-        urlBuilder.addPathSegment("SFO");
-        urlBuilder.addPathSegment("LAX");
-        urlBuilder.addPathSegment("2021-12-24");
-        urlBuilder.addQueryParameter("apiKey", apiKey);
+        urlBuilder.addPathSegment("search");
+        urlBuilder.addQueryParameter("rapidapi-key", apiKey);
         urlBuilder.addQueryParameter("sort_order", "PRICE"); //hard coded
         urlBuilder.addQueryParameter("depLocation", depLocation);
         urlBuilder.addQueryParameter("departure", depDate); //format yyyy-mm-dd
