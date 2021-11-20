@@ -25,6 +25,10 @@ public class FlightSearchApi {
     {
         String p = Integer.toString(passengers);
         HttpUrl.Builder urlBuilder = HttpUrl.parse(baseApiUrl).newBuilder();
+        urlBuilder.addPathSegment("flights");
+        urlBuilder.addPathSegment("SFO");
+        urlBuilder.addPathSegment("LAX");
+        urlBuilder.addPathSegment("2021-12-24");
         urlBuilder.addQueryParameter("apiKey", apiKey);
         urlBuilder.addQueryParameter("sort_order", "PRICE"); //hard coded
         urlBuilder.addQueryParameter("depLocation", depLocation);
